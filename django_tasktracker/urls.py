@@ -15,10 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from tasktracker.views import get_tasktracker_list
-
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', get_tasktracker_list, name = 'get_tasktracker_list'),
+   path('admin/', admin.site.urls),
 ]
+
